@@ -1,0 +1,21 @@
+<h1>HttpClient</h1>
+<table class='table'>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>HTML Url</th>
+    <th>description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let repo of repos;let count = index;">
+    <td *ngIf="count<5">{{repo.id}}</td>
+    <td *ngIf="count<5"> {{repo.name}}</td>
+    <td *ngIf="count<5">{{repo.html_url}}</td>
+    <td *ngIf="count<5">{{repo.description}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<!--<pre>{{repos | json}}</pre>-->
